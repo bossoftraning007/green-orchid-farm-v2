@@ -5,7 +5,6 @@ import { MAIN_WHATSAPP_NUMBER } from '../../utils/whatsapp';
 
 interface PropertiesProps {
   onOpenBookVisit: () => void;
-  onOpenEmi: () => void;
 }
 
 const properties = [
@@ -28,27 +27,9 @@ const properties = [
       'Spot Registration',
     ],
   },
-  {
-    id: '2bhk',
-    title: '2BHK Villa Farmhouse',
-    type: 'Premium',
-    price: 3500000,
-    plotSize: '242 sq.yards',
-    houseSize: '350 sq.ft',
-    tag: 'Premium',
-    image: '/posters/weekend-houses.jpeg',
-    features: [
-      '8 Premium Furniture Items Included',
-      '2 Years FREE Maintenance',
-      'HMDA Approved Layout',
-      'Road-Facing Premium Plot',
-      'Organic Fruit Trees',
-      'Private Gated Community',
-    ],
-  },
 ];
 
-export const Properties: React.FC<PropertiesProps> = ({ onOpenBookVisit, onOpenEmi }) => {
+export const Properties: React.FC<PropertiesProps> = ({ onOpenBookVisit }) => {
   return (
     <section id="properties" className="py-20 bg-navy-950 relative border-t border-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -57,10 +38,10 @@ export const Properties: React.FC<PropertiesProps> = ({ onOpenBookVisit, onOpenE
             OUR PROPERTIES
           </span>
           <h2 className="text-3xl sm:text-5xl font-black text-white mt-4 mb-4">
-            Premium Farmhouse Plots
+            Premium Farmhouse Plot
           </h2>
           <p className="text-base text-slate-400">
-            Choose from our carefully designed 1BHK and 2BHK luxury farmhouse options with full amenities and legal approvals.
+            Our exclusive 1BHK luxury farmhouse with full amenities and legal approvals.
           </p>
         </div>
 
@@ -70,7 +51,6 @@ export const Properties: React.FC<PropertiesProps> = ({ onOpenBookVisit, onOpenE
               key={property.id}
               {...property}
               onOpenBookVisit={onOpenBookVisit}
-              onOpenEmi={onOpenEmi}
             />
           ))}
         </div>
@@ -86,12 +66,6 @@ export const Properties: React.FC<PropertiesProps> = ({ onOpenBookVisit, onOpenE
             >
               WhatsApp Inquiry
             </a>
-            <button
-              onClick={onOpenEmi}
-              className="px-8 py-3 rounded-xl bg-navy-900 border border-slate-700 text-slate-300 font-bold text-sm hover:bg-navy-800 hover:text-white transition-all"
-            >
-              Calculate EMI
-            </button>
           </div>
         </div>
       </div>

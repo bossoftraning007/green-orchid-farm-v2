@@ -6,12 +6,10 @@ import { GalleryLightbox } from './components/features/GalleryLightbox';
 import { Amenities } from './components/features/Amenities';
 import { LocationSection } from './components/features/LocationSection';
 import { LegalDocSection } from './components/features/LegalDocSection';
-import { Testimonials } from './components/features/Testimonials';
 import { FAQSection } from './components/features/FAQSection';
 import { ContactForm } from './components/features/ContactForm';
 import { MarketingPosters } from './components/features/MarketingPosters';
 import { ShareablePoster } from './components/features/ShareablePoster';
-import { FurnitureIncluded } from './components/features/FurnitureIncluded';
 import { Footer } from './components/common/Footer';
 import { FloatingActions } from './components/common/FloatingActions';
 import { BookSiteVisitModal } from './components/features/BookSiteVisitModal';
@@ -38,13 +36,11 @@ export function App() {
       <Navbar onOpenBookVisit={() => setIsBookVisitOpen(true)} />
       <main>
         <Hero onOpenBookVisit={() => setIsBookVisitOpen(true)} onOpenEmi={() => setIsEmiOpen(true)} />
-        <Properties onOpenBookVisit={() => setIsBookVisitOpen(true)} onOpenEmi={() => setIsEmiOpen(true)} />
-        <FurnitureIncluded />
+        <Properties onOpenBookVisit={() => setIsBookVisitOpen(true)} />
         <GalleryLightbox />
         <Amenities />
         <LocationSection />
         <LegalDocSection />
-        <Testimonials />
         <FAQSection />
         <ContactForm onShowToast={showToast} />
         <MarketingPosters onShowToast={showToast} />

@@ -5,10 +5,6 @@ export const FAQSection: React.FC = () => {
 
   const faqs = [
     {
-      question: 'Is the property legally approved?',
-      answer: 'Yes, 100% HMDA approved with spot registration available. You get Pattadar Passbook from Dharani portal within 15 working days. All plots are freehold with clear titles.',
-    },
-    {
       question: 'What is the payment plan?',
       answer: 'We offer a flexible 24-month payment plan. Just 25% booking amount and the balance can be paid in monthly EMIs. Bank loan assistance is also available.',
     },

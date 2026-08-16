@@ -7,7 +7,6 @@ interface EmiCalculatorModalProps {
 
 const properties = [
   { name: '1BHK Luxury Farmhouse', price: 2100000 },
-  { name: '2BHK Villa Farmhouse', price: 3500000 },
 ];
 
 export const EmiCalculatorModal: React.FC<EmiCalculatorModalProps> = ({ isOpen, onClose }) => {

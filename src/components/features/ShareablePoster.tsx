@@ -7,8 +7,6 @@ export const ShareablePoster: React.FC = () => {
 
   const templates = [
     { title: '1BHK Farmhouse Offer', price: '₹21 Lakhs', tag: 'BEST DEAL', color: 'from-gold-400 to-amber-500' },
-    { title: '2BHK Villa Farmhouse', price: '₹35 Lakhs', tag: 'PREMIUM', color: 'from-emerald-400 to-teal-500' },
-    { title: 'Limited Time Offer', price: 'Save ₹3 Lakhs', tag: 'HOT DEAL', color: 'from-orange-400 to-red-500' },
   ];
 
   const template = templates[selectedTemplate];

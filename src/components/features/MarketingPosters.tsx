@@ -14,13 +14,6 @@ export const MarketingPosters: React.FC<MarketingPostersProps> = ({ onShowToast 
       image: '/posters/farmhouse.jpeg',
       downloadUrl: '/posters/farmhouse.jpeg',
     },
-    {
-      id: 'weekend-house',
-      title: 'Weekend Houses Discount Poster',
-      description: 'Weekend Farmhouse Land discount banner (₹21L offer).',
-      image: '/posters/weekend-houses.jpeg',
-      downloadUrl: '/posters/weekend-houses.jpeg',
-    },
   ];
 
   const handleShare = (posterTitle: string) => {

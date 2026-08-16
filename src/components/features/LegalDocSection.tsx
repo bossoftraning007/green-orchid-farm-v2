@@ -3,7 +3,6 @@ import { FileText, ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 export const LegalDocSection: React.FC = () => {
   const docs = [
-    { title: 'HMDA Approval Certificate', desc: 'Official HMDA approved layout permission', status: 'Verified' },
     { title: 'Pattadar Passbook', desc: 'Dharani portal integrated passbook', status: 'Available' },
     { title: 'Freehold Title Deed', desc: 'Clear title with full ownership rights', status: 'Verified' },
     { title: 'Site Layout Plan', desc: 'Approved 5.5 acres layout with 72 units', status: 'Available' },

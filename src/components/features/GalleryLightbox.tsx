@@ -8,6 +8,10 @@ interface GalleryLightboxProps {
 const defaultImages = [
   '/posters/farmhouse.jpeg',
   '/posters/weekend-houses.jpeg',
+  '/posters/bus.jpeg',
+  '/posters/layout.jpeg',
+  '/posters/clubhouse.jpeg',
+  '/posters/plot.jpeg',
 ];
 
 export const GalleryLightbox: React.FC<GalleryLightboxProps> = ({ images = defaultImages }) => {

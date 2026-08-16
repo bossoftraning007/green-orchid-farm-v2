@@ -30,20 +30,20 @@ function getRuleBasedResponse(userMessage: string): { text: string; action?: 'wh
 
   if (msg.includes('price') || msg.includes('cost') || msg.includes('budget') || msg.includes('how much') || msg.includes('₹')) {
     return {
-      text: 'Great question! 💰 Here are our current offers:\n\n🔥 **1BHK Luxury Farmhouse** — ₹21,00,000\n   Plot: 121 sq.yds | House: 350 sq.ft\n   (Original: ₹24,00,000 — Limited Offer!)\n\n🏆 **2BHK Villa Farmhouse** — ₹35,00,000\n   Plot: 242 sq.yds | House: 350 sq.ft\n\n✅ Both include: 2 Years FREE Maintenance + 8 Premium Furniture Items\n\n💳 We offer a flexible 24-month payment plan with just 25% booking amount!\n\nWould you like me to connect you with R. Ganesh Sir on WhatsApp for exact payment schedules?',
+      text: 'Great question! 💰 Here are our current offers:\n\n🔥 **1BHK Luxury Farmhouse** — ₹21,00,000\n   Plot: 121 sq.yds | House: 350 sq.ft\n   (Original: ₹24,00,000 — Limited Offer!)\n\n✅ Includes: 2 Years FREE Maintenance + 8 Premium Furniture Items\n\n💳 We offer a flexible 24-month payment plan with just 25% booking amount!\n\nWould you like me to connect you with R. Ganesh Sir on WhatsApp for exact payment schedules?',
       action: 'whatsapp',
     };
   }
 
   if (msg.includes('emi') || msg.includes('loan') || msg.includes('payment') || msg.includes('installment') || msg.includes('finance')) {
     return {
-      text: 'Here\'s our flexible payment plan 💳:\n\nFor **1BHK Farmhouse (₹21L)**:\n- Booking: 25% = ₹5.25L\n- Balance: 24 monthly EMIs of ~₹66K\n\nFor **2BHK Villa (₹35L)**:\n- Booking: 25% = ₹8.75L\n- Balance: 24 monthly EMIs of ~₹1.09L\n\n🏦 Bank loan assistance available!\n\nUse the **EMI Calculator** on this page for exact figures, or I can connect you with R. Ganesh Sir for custom options.',
+      text: 'Here\'s our flexible payment plan 💳:\n\nFor **1BHK Farmhouse (₹21L)**:\n- Booking: 25% = ₹5.25L\n- Balance: 24 monthly EMIs of ~₹66K\n\n🏦 Bank loan assistance available!\n\nUse the **EMI Calculator** on this page for exact figures, or I can connect you with R. Ganesh Sir for custom options.',
     };
   }
 
   if (msg.includes('property') || msg.includes('house') || msg.includes('plot') || msg.includes('farmhouse') || msg.includes('show')) {
     return {
-      text: 'We have 2 premium options at Green Orchid Farm Land 🏡:\n\n**1. 1BHK Luxury Farmhouse — ₹21L**\n- 121 sq.yds plot + 350 sq.ft 1BHK house\n- 8 premium furniture items included\n- Gated community, organic fruit trees\n- BEST DEAL tag 🔥\n\n**2. 2BHK Villa Farmhouse — ₹35L**\n- 242 sq.yds premium plot + 350 sq.ft 2BHK villa\n- Road-facing, premium location\n- All 8 furniture items included\n\nBoth come with 2 Years FREE Maintenance and HMDA approval!\n\nWhich one interests you more? I can help you book a site visit to see the actual plots.',
+      text: 'We have an exclusive option at Green Orchid Farm Land 🏡:\n\n**1BHK Luxury Farmhouse — ₹21L**\n- 121 sq.yds plot + 350 sq.ft 1BHK house\n- 8 premium furniture items included\n- Gated community, organic fruit trees\n- BEST DEAL tag 🔥\n\nComes with 2 Years FREE Maintenance and HMDA approval!\n\nWould you like to book a site visit to see the actual plot?',
     };
   }
 
@@ -111,7 +111,7 @@ function getRuleBasedResponse(userMessage: string): { text: string; action?: 'wh
   }
 
   return {
-    text: 'I\'d be happy to help you with that! 😊\n\nAt Green Orchid Farm Land, we have:\n🏠 1BHK Farmhouses starting at ₹21L\n🏆 2BHK Villas at ₹35L\n✅ 100% HMDA Approved with spot registration\n🎁 2 Years FREE Maintenance\n🛋️ 8 furniture items included FREE\n\nWould you like to:\n- See property details?\n- Book a FREE site visit?\n- Get a call back from R. Ganesh Sir?\n- Calculate EMI?',
+    text: 'I\'d be happy to help you with that! 😊\n\nAt Green Orchid Farm Land, we have:\n🏠 1BHK Luxury Farmhouse at ₹21L\n✅ 100% HMDA Approved with spot registration\n🎁 2 Years FREE Maintenance\n🛋️ 8 furniture items included FREE\n\nWould you like to:\n- See property details?\n- Book a FREE site visit?\n- Get a call back from R. Ganesh Sir?\n- Calculate EMI?',
   };
 }
 

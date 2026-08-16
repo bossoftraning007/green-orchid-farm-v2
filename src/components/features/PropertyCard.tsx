@@ -14,7 +14,6 @@ interface PropertyCardProps {
   features: string[];
   image: string;
   onOpenBookVisit: () => void;
-  onOpenEmi: () => void;
 }
 
 export const PropertyCard: React.FC<PropertyCardProps> = ({
